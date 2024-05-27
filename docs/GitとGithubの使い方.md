@@ -547,18 +547,18 @@ this is new-branch
 以下のリンクからサインインします。
 https://github.com/
 
-![[Github_example_mypage_menu.png]]
+![](resources/Github_example_mypage_menu.png)
 
 右上の自分のアイコンをクリックして、**Your repositories** をクリックします。
 その後、右上の緑色の 🆕 ボタンをクリックします。
 
-![[Github_example_create_repository.png]]
+![](resources/Github_example_create_repository.png)
 
 **Repository name**に適当な名前をつけます。
 名前にはハイフンと英数字のみが使用できます。
 書き終わったら、画面下緑色の **Create repository** ボタンを押すと、レポジトリを作成されます。
 
-![[Github_example_repository.png]]
+![](resources/Github_example_repository.png)
 
 これで、Githubのレポジトリが作成できました。
 
@@ -598,15 +598,15 @@ cat %homepath%/.ssh/鍵ファイル名.pub | clip
 
 次に、Githubに戻り右上のアイコンから **Settings** を開きます。
 
-![[Github_example_settings.png]]
+![](resources/Github_example_settings.png)
 
 設定画面から **SSH and GPG keys** を選択します。
 
-![[Github_example_SSH_key.png]]
+![](resources/Github_example_SSH_key.png)
 
 右上の緑の **New SSH Key** ボタンをクリックします。
 
-![[Github_example_addkey.png]]
+![](resources/Github_example_addkey.png)
 
 **Title** には、わかりやすい名前を設定します。
 基本的にはファイル名と同じがいいと思われます。
@@ -620,7 +620,7 @@ cat %homepath%/.ssh/鍵ファイル名.pub | clip
 まずは、レポジトリの画面からURIをコピーします。
 画面では、**HTTPS** になっていますが、 **SSH** を選択してコピーします。
 
-![[Github_example_URI.png]]
+![](resources/Github_example_URI.png)
 
 
 それでは、ターミナルでレポジトリに戻って、以下のコマンドを実行します。
@@ -653,8 +653,8 @@ Githubでは、チーム開発を円滑にするためのいくつかの機能�
 ### イシュー
 **イシュー**とは、簡単に言えばスレッド機能です。
 
-![[Github_example_issue.png]]
-![[Github_example_issue_editing.png]]
+![](resources/Github_example_issue.png)
+![](resources/Github_example_issue_editing.png)
 
 主に、不具合や特定の機能実装の際のタスク管理チケットとして利用されるケースが多いです。
 本文はMarkdown形式で書くことができます。
@@ -682,16 +682,16 @@ git push -u origin dev
 ```
 
 Github上のレポジトリを確認すると、`dev`ブランチが追加されています。
-![[Github_example_branch_list.png]]
+![](resources/Github_example_branch_list.png)
 
 ここで、上メニュー内の **Pull requests** を開きます。
-![[Github_example_pull_request.png]]
+![](resources/Github_example_pull_request.png)
 緑色の **New pull request** ボタンから、新しくプルリクエストを作成します。
-![[Github_example_new_pull_request.png]]
+![](resources/Github_example_new_pull_request.png)
 
 赤枠で囲まれている部分が、マージ先とマージ元を指定する箇所です。
 左がマージ先なので、`main`ブランチ、右がマージ元なので、`dev`ブランチを指定します。
-![[Github_example_new_pull_request_confirm.png]]
+![](resources/Github_example_new_pull_request_confirm.png)
 すると、画面がこのようになり、変更点が表示されます。
 この状態で、右にある緑色の **Create pull request** ボタンを押すことでプルリクエストを作成することができます。
 
@@ -699,13 +699,13 @@ Github上のレポジトリを確認すると、`dev`ブランチが追加され
 下にある緑色の **Create pull request** を押すことで、プルリクエストが発行されるようになります。
 
 すると、このような画面に遷移します。
-![[Github_example_pull_reqeust_review.png]]
+![](resources/Github_example_pull_reqeust_review.png)
 ここで、チーム開発ではコードレビューが行われ、再編集を行ったり、完了したら正式にマージが行われます。
 ここでもイシューと同様にスレッド形式で会話を行うことができます。
 
 マージを行うには、緑枠で囲われたコメントの、緑色の**Merge pull request** ボタンをクリックします。
 マージ時のコミットコメントを書いて、マージが行われます。
-![[Github_example_pull_request_merged.png]]
+![](resources/Github_example_pull_request_merged.png)
 マージが行われたプルリクエストは、紫色の **Merged** という状態になります。
 
 ここで、Githubレポジトリの中身を覗くと、`main`ブランチに編集がマージされているのが確認できます。
